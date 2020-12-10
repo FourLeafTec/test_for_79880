@@ -1,0 +1,13 @@
+#[build]
+#target = "mipsel-unknown-linux-gnu"
+
+[target.mipsel-unknown-linux-gnu]
+rustflags = [
+  "-C", "link-arg=-EL",
+  "-C", "target-cpu=mips32",
+  "-C", "target-feature=+mips32,-mips32r2,+fpxx,+nooddspreg",
+]
+
+ar = "/home/ubuntu/data/YDH/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_glibc-2.21/bin/mipsel-openwrt-linux-gnu-ar"
+linker = "/home/ubuntu/data/YDH/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_glibc-2.21/bin/mipsel-openwrt-linux-gnu-gcc"
+runner = "upload.sh"

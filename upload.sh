@@ -1,0 +1,1 @@
+ scp target/mipsel-unknown-linux-gnu/release/tgobs root@172.16.10.1:/

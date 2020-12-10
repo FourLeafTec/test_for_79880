@@ -1,0 +1,13 @@
+[target.mipsel-unknown-linux-gnu.dependencies]
+std = { features = ["panic_unwind"] }
+# std = { default-features = false }
+
+### Features are not forwarded
+#[mipsel-unknown-linux-gnu.dependencies]
+#openssl-sys = { version = "0.9.12", features = ["vendored"] }
+
+#[mipsel-unknown-linux-gnu.patch.crates-io]
+#openssl-src = { path = './dependencies/openssl-src-rs' }
+
+# [build]
+# target = "mipsel-unknown-linux-gnu"
